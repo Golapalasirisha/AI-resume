@@ -1,0 +1,136 @@
+
+.progress-page {
+  padding: 40px;
+  min-height: 80vh;
+  color: #ffffff;
+}
+
+.progress-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.progress-heading span {
+  color: #b18cff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.progress-heading h1 {
+  font-size: 34px;
+  margin: 12px 0;
+}
+
+.progress-heading p {
+  color: #b8b8c8;
+}
+
+.progress-summary {
+  max-width: 700px;
+  margin: 0 auto 35px;
+  padding: 25px;
+  background: #1b1b2b;
+  border: 1px solid #34344a;
+  border-radius: 15px;
+}
+
+.progress-summary h2 {
+  color: #b18cff;
+  margin-top: 0;
+}
+
+.progress-summary p {
+  color: #b8b8c8;
+  font-size: 14px;
+}
+
+.progress-bar {
+  height: 12px;
+  width: 100%;
+  background: #34344a;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #8b5cf6, #c084fc);
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+.progress-topic-list {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  gap: 18px;
+}
+
+.progress-topic-card {
+  background: #1b1b2b;
+  border: 1px solid #34344a;
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.progress-topic-card h3 {
+  margin: 0 0 8px;
+}
+
+.progress-topic-card p {
+  color: #b18cff;
+  margin: 5px 0;
+}
+
+.progress-topic-card small {
+  color: #a5a5b5;
+}
+
+.progress-topic-card button {
+  border: none;
+  padding: 11px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pending-btn {
+  background: #8b5cf6;
+  color: white;
+}
+
+.completed-btn {
+  background: #245d47;
+  color: #a7f3d0;
+}
+
+.progress-empty {
+  text-align: center;
+  padding: 35px;
+  color: #b8b8c8;
+}
+
+.progress-error {
+  text-align: center;
+  color: #ff7777;
+}
+
+@media (max-width: 600px) {
+  .progress-page {
+    padding: 20px;
+  }
+
+  .progress-heading h1 {
+    font-size: 26px;
+  }
+
+  .progress-topic-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

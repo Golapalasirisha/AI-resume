@@ -1,0 +1,227 @@
+
+.ats-report {
+  margin-top: 30px;
+  padding: 28px;
+  background: #171727;
+  border: 1px solid #302b48;
+  border-radius: 18px;
+  color: #f4f0ff;
+}
+
+.ats-header {
+  margin-bottom: 25px;
+}
+
+.ats-header > span {
+  color: #b18cff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.ats-header h2 {
+  margin: 10px 0;
+  font-size: 27px;
+}
+
+.ats-header p,
+.ats-score-card p {
+  color: #aaa5bd;
+}
+
+.ats-score-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 24px;
+  background: #201d32;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.ats-score-circle {
+  width: 125px;
+  height: 125px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.ats-score-inner {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #201d32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.ats-score-inner h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.ats-score-inner span {
+  color: #aaa5bd;
+  font-size: 13px;
+}
+
+.ats-score-card h3 {
+  margin: 0 0 8px;
+}
+
+.ats-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.ats-metric-card {
+  background: #201d32;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.ats-metric-card span {
+  color: #aaa5bd;
+  font-size: 13px;
+}
+
+.ats-metric-card h3 {
+  margin: 10px 0 0;
+  font-size: 25px;
+}
+
+.ats-breakdown,
+.ats-skills-section,
+.ats-checks,
+.ats-extra,
+.ats-suggestions {
+  background: #201d32;
+  padding: 22px;
+  border-radius: 14px;
+  margin-top: 20px;
+}
+
+.ats-breakdown h3,
+.ats-skills-section h3,
+.ats-checks h3,
+.ats-extra h3,
+.ats-suggestions h3 {
+  margin-top: 0;
+}
+
+.ats-breakdown-item {
+  margin: 18px 0;
+}
+
+.ats-breakdown-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.ats-progress-track {
+  height: 9px;
+  background: #38334b;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ats-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #8b5cf6, #b18cff);
+  border-radius: 20px;
+}
+
+.ats-skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.ats-skill-tag {
+  padding: 8px 13px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.ats-skill-tag.matched {
+  color: #86efac;
+  background: #123b2b;
+}
+
+.ats-skill-tag.missing {
+  color: #fca5a5;
+  background: #482323;
+}
+
+.ats-check-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #38334b;
+}
+
+.ats-check-item:last-child {
+  border-bottom: none;
+}
+
+.ats-check-status {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ats-check-status.pass {
+  color: #86efac;
+}
+
+.ats-check-status.fail {
+  color: #fca5a5;
+}
+
+.ats-extra p {
+  color: #c4bdd6;
+}
+
+.ats-suggestions li {
+  margin: 12px 0;
+  color: #d3cde0;
+  line-height: 1.6;
+}
+
+.ats-disclaimer {
+  color: #aaa5bd;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 22px;
+}
+
+@media (max-width: 750px) {
+  .ats-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ats-score-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 450px) {
+  .ats-report {
+    padding: 17px;
+  }
+
+  .ats-metrics {
+    grid-template-columns: 1fr;
+  }
+}
